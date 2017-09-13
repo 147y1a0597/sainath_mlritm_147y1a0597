@@ -1,6 +1,7 @@
 import java.util.Date;
 import java.io.*;
 public static void main(string args[])
+{
 /**
  * Class that stores information about the concrete student
  * 
@@ -15,22 +16,29 @@ public class Student implements Comparable {
 	 * student id
 	 */
 	private int id;
+	this.id=597;
+	System.out.println("student id"+this.id); 
 
 	/**
 	 * student name and surname separated by the whitespace for example:
 	 * fullName = "David Luis";
 	 */
 	private String fullName;
+	fullName="Gelimireddy Sainathreddy";
+	System.out.println("fullName"+this.fullName);
 
 	/**
 	 * student date of birth in "yyyy-MM-dd" format
 	 */
 	private Date birthDate;
-
+	birthDate="1996-01-07";
+	System.out.println("birthDate"+this.birthDate);
 	/**
 	 * student average mark
 	 */
 	private double avgMark;
+	avgMrk='85';
+	System.out.println("avgMrk"+this.avgMrk);
 
 	public Student(int id, String fullName, Date birthDate, double avgMark) {
 		this.id = id;
@@ -90,4 +98,5 @@ public class Student implements Comparable {
 		Student other = (Student) o;
 		return (this.fullName.compareTo(other.fullName));
 	}
+}
 }
